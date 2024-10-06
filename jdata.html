@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add and Remove Items</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        label, input, button {
+            display: block;
+            margin: 10px 0;
+        }
+        .item {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+        }
+        .remove-btn {
+            margin-left: 10px;
+            color: white;
+            background-color: red;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Add and Remove Items</h1>
+
+    <form id="inputForm">
+        <label for="name">What is your name?</label>
+        <input type="text" id="name" required>
+
+        <label for="age">What is your age?</label>
+        <input type="number" id="age" required>
+
+        <label for="color">What is your Subject?</label>
+        <input type="text" id="subject" required>
+
+        <button type="submit">Add to List</button>
+    </form>
+
+    <h2>Items List</h2>
+    <div id="itemList"></div>
+
+    <script src="jdata.js"> </script>
+
+</body>
+</html>
